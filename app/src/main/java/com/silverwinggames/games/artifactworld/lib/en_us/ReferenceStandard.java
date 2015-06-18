@@ -1,10 +1,8 @@
-package com.silverwinggames.games.artifactworld.lib;
+package com.silverwinggames.games.artifactworld.lib.en_us;
 
-
-import com.silverwinggames.games.artifactworld.resource.land.Land;
-
-public class Reference
+public class ReferenceStandard
 {
+    // Standard Game Information
     public final String USER_NAME = "Default User";
     public final String GAME_NAME = "Artifact World";
     public final String VERSION = "v 0.0.1";
@@ -39,5 +37,16 @@ public class Reference
     // Tier 3 Land Type Names
     public final String RAINFOREST_NAME = "Rainforest";
     public final String PARADISE_NAME = "Paradise";
+
+    // Time Period Names
+    public final String FIRST_AGE = "Ancient Era";
+    public final String SECOND_AGE = "Classical Era";
+    public final String THIRD_AGE = "Medieval Era";
+    public final String FOURTH_AGE = "Renaissance Era";
+    public final String FIFTH_AGE = "Industrial Era";
+    public final String SIXTH_AGE = "Modern Era";
+    public final String SEVENTH_AGE = "Nuclear Era";
+    public final String EIGHTH_AGE = "Digital Era";
+    public final String NINTH_AGE = "Space Era";
 
 }

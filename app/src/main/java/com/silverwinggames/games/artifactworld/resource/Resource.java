@@ -3,6 +3,7 @@ package com.silverwinggames.games.artifactworld.resource;
 /**
  * Created by Samuel on 6/17/2015.
  */
+
 public class Resource
 {
 

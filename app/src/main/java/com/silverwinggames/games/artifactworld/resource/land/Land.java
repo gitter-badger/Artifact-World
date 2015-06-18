@@ -13,9 +13,60 @@ public class Land
     private static char tierTwoMod;
     private static char tierThreeMod;
 
-    public Land()
+    /**
+     * Tier 0 (Base) Land
+     * @param name Name of the Land.
+     * @param baseType Base Type. Mountain, Desert, Plains
+     */
+    public Land(String name, String baseType)
     {
+        this.name = name;
+        this.baseType = baseType;
+    }
 
+    /**
+     * Tier 1 Land
+     * @param name Name of the Land.
+     * @param baseType Base Type. Mountain, Desert, Plains
+     * @param tierOneMod Tier One Mod : (f) Forest, (s) Savannah
+     */
+    public Land(String name, String baseType, char tierOneMod)
+    {
+        this.name = name;
+        this.baseType = baseType;
+        this.tierOneMod = tierOneMod;
+    }
+
+    /**
+     * Tier 2 Land
+     * @param name Name of the Land.
+     * @param baseType Base Type. Mountain, Desert, Plains
+     * @param tierOneMod Tier One Mod : (f) Forest, (s) Savannah
+     * @param tierTwoMod Tier Two Mod : (s) Swamp, (j) Jungle, (m) Marsh, (g) Grasslands
+     */
+    public Land(String name, String baseType, char tierOneMod, char tierTwoMod)
+    {
+        this.name = name;
+        this.baseType = baseType;
+        this.tierOneMod = tierOneMod;
+        this.tierTwoMod = tierTwoMod;
+    }
+
+    /**
+     * Tier 3 Land
+     * @param name Name of the Land.
+     * @param baseType Base Type. Mountain, Desert, Plains
+     * @param tierOneMod Tier One Mod : (f) Forest, (s) Savannah
+     * @param tierTwoMod Tier Two Mod : (s) Swamp, (j) Jungle, (m) Marsh, (g) Grasslands
+     * @param tierThreeMod Tier Three Mod : (r) Rainforest, (p) Paradise
+     */
+    public Land(String name, String baseType, char tierOneMod, char tierTwoMod, char tierThreeMod)
+    {
+        this.name = name;
+        this.baseType = baseType;
+        this.tierOneMod = tierOneMod;
+        this.tierTwoMod = tierTwoMod;
+        this.tierThreeMod = tierThreeMod;
     }
 
     // Getters.
@@ -31,6 +82,5 @@ public class Land
     public static void setTierOneMod(char c) {tierOneMod = c;}
     public static void setTierTwoMod(char c) {tierTwoMod = c;}
     public static void setTierThreeMod(char c) {tierThreeMod = c;}
-
 
 }
